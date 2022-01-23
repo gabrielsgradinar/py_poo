@@ -1,0 +1,13 @@
+from email import message
+
+
+class SaySomething:
+
+    def __init__(self,message) -> None:
+        self.message = message
+    
+    def say(self):
+        print(self.message)
+
+    def change_message(self, new_message):
+        self.message = new_message
